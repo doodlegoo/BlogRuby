@@ -13,3 +13,47 @@
  *= require_tree .
  *= require_self
  */
+
+header, footer{
+  margin-left : 0;
+}
+
+body{
+  font-size : 14px;
+}
+
+#main_col {
+  margin-left: 15%;
+  margin-right: 15%; 
+}
+
+.article_title {
+  font-size : 18px;
+  font-weight: bold;
+  text-align : center ; 
+}
+
+.article_text {
+
+}
+
+.options a {
+  -webkit-box-shadow: rgb(84, 163, 247) 0px 1px 0px 0px inset;
+  box-shadow: rgb(84, 163, 247) 0px 1px 0px 0px inset;
+  border-radius: 12px; border: 1px solid rgb(18, 77, 119);
+  display: inline-block;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-family: arial; 
+  font-size: 13px;
+  padding: 7px 25px; 
+  text-decoration: none;
+  text-shadow: rgb(21, 70, 130) 0px 1px 0px;
+  background: linear-gradient(rgb(0, 125, 193) 5%, rgb(0, 97, 167) 100%) rgb(0, 125, 193);
+}
+
+
+footer {
+  padding : 2em;
+  background-color : #223;
+}
