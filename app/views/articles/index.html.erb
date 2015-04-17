@@ -5,9 +5,10 @@
 
     <div class="article_title"><%=article.title %></div>
     <div class="article_text"><%= article.text %></div>
+    <div class="article_date"><%= article.created_at %></div>
     <div class="options">
-    <%= link_to 'Show', article_path(article) %>
-    <%= link_to 'Edit', edit_article_path(article) %>
+    <%= link_to 'Show', article_path(article)%>
+    <%= link_to 'Edit', edit_article_path(article) %>
     <%= link_to 'Destroy', article_path(article),
             method: :delete,
             data: { confirm: 'Are you sure?' } %>

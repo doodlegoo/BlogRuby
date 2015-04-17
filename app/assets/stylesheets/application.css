@@ -37,6 +37,11 @@ body{
 
 }
 
+.article_date {
+	text-align : center;
+  font-weight : bold ;
+}
+
 .options a {
   -webkit-box-shadow: rgb(84, 163, 247) 0px 1px 0px 0px inset;
   box-shadow: rgb(84, 163, 247) 0px 1px 0px 0px inset;
