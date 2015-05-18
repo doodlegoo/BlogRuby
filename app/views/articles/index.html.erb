@@ -1,17 +1,18 @@
 <%= link_to 'Créer un nouvel article', new_article_path %>
  
 <div id="main_col"> 
-  <% @articles.each do |article| %>
+  <% @articles.limit(5).each do |article| %>
 
     <div class="article_title"><%=article.title %></div>
     <div class="article_text"><%= article.text %></div>
-    <div class="article_date"><%= article.created_at %></div>
+    <div class="article_date"><%= Date.parse(article.created_at.to_s).gregorian %></div>
     <div class="options">
-    <%= link_to 'Show', article_path(article)%>
+    <%= link_to 'Show more', article_path(article)%>
     <%= link_to 'Edit', edit_article_path(article) %>
-    <%= link_to 'Destroy', article_path(article),
+<!--    <%= link_to 'Destroy', article_path(article),
             method: :delete,
             data: { confirm: 'Are you sure?' } %>
+-->    
     </div>
 
     <% end %>

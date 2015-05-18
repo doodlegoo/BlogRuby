@@ -28,17 +28,17 @@ body{
 }
 
 .article_title {
-  font-size : 18px;
+  font-size : 32px;
   font-weight: bold;
   text-align : center ; 
 }
 
 .article_text {
-
+	font-size : 20px;
 }
 
 .article_date {
-	text-align : center;
+	text-align : right;
   font-weight : bold ;
 }
 
