@@ -22,11 +22,28 @@ body{
   font-size : 14px;
 }
 
+html { 
+  background: url("Montreal.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 #main_col {
+
+  background : white;
+  opacity : 0.9;
+  padding : 20px 30px ; 
+  border-radius: 25px;
+	line-height : 2.5em;
+
   margin-left: 15%;
   margin-right: 15%; 
 }
-
+#article_header {
+  
+}
 .article_title {
   font-size : 32px;
   font-weight: bold;
@@ -60,5 +77,4 @@ body{
 
 footer {
   padding : 2em;
-  background-color : #223;
 }
