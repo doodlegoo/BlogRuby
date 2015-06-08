@@ -7,15 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <header>
-    <%= ActionController::Base.helpers.link_to image_tag("header.jpg"), '/articles'%>
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-       <li><%= link_to "Accueil", '/articles' %></li>
-       <li><%= link_to "Citations", '/quotes' %></li>
-       <li><%= link_to "Log in", '#' %></li>
+    <div id ='cssmenu'>
+      <ul>
+       <li class='active has-sub'> <%= link_to "Blog", '/articles' %>
+         <ul>
+           <li><%=link_to "Tech",'#Tech' %></li>
+           <li class='last'><%= link_to "Business",'#Business' %></li>
+         </ul>
+       </li>
+       <li class='active has-sub'><%= link_to "Ressources", '#ressources' %>
+         <ul>
+           <li ><%=link_to "Quotes",'/quotes' %></li>
+           <li class='last'><%= link_to "Sources",'#sources' %></li>
+         </ul>
+       <li class='last'><%= link_to "Log in", '#' %></li>
       </ul>
-</nav>  </header>
+    </div> 
 
   <%= yield %>
 
